@@ -96,9 +96,9 @@ import { Cordova, IonicNativePlugin, Plugin } from '@ionic-native/core';
  * CameraPreviewPictureOptions
  * CameraPreviewDimensions
  */
-var CameraPreview = (function (_super) {
-    __extends(CameraPreview, _super);
-    function CameraPreview() {
+var CameraPreviewThink = (function (_super) {
+    __extends(CameraPreviewThink, _super);
+    function CameraPreviewThink() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.FOCUS_MODE = {
             FIXED: 'fixed',
@@ -160,7 +160,7 @@ var CameraPreview = (function (_super) {
        * @param {CameraPreviewOptions} options
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.startCamera = /**
+      CameraPreviewThink.prototype.startCamera = /**
        * Starts the camera preview instance.
        * @param {CameraPreviewOptions} options
        * @return {Promise<any>}
@@ -176,7 +176,7 @@ var CameraPreview = (function (_super) {
        * Stops the camera preview instance. (iOS & Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.stopCamera = /**
+      CameraPreviewThink.prototype.stopCamera = /**
        * Stops the camera preview instance. (iOS & Android)
        * @return {Promise<any>}
        */
@@ -191,7 +191,7 @@ var CameraPreview = (function (_super) {
        * Switch from the rear camera and front camera, if available.
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.switchCamera = /**
+    CameraPreviewThink.prototype.switchCamera = /**
        * Switch from the rear camera and front camera, if available.
        * @return {Promise<any>}
        */
@@ -206,7 +206,7 @@ var CameraPreview = (function (_super) {
        * Hide the camera preview box.
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.hide = /**
+    CameraPreviewThink.prototype.hide = /**
        * Hide the camera preview box.
        * @return {Promise<any>}
        */
@@ -221,7 +221,7 @@ var CameraPreview = (function (_super) {
        * Show the camera preview box.
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.show = /**
+    CameraPreviewThink.prototype.show = /**
        * Show the camera preview box.
        * @return {Promise<any>}
        */
@@ -238,7 +238,7 @@ var CameraPreview = (function (_super) {
        * @param {CameraPreviewPictureOptions} [options] size and quality of the picture to take
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.takePicture = /**
+    CameraPreviewThink.prototype.takePicture = /**
        * Take the picture (base64)
        * @param {CameraPreviewPictureOptions} [options] size and quality of the picture to take
        * @return {Promise<any>}
@@ -260,7 +260,7 @@ var CameraPreview = (function (_super) {
        * @param {string} effect name : 'none' (iOS & Android), 'aqua' (Android), 'blackboard' (Android), 'mono' (iOS & Android), 'negative' (iOS & Android), 'posterize' (iOS & Android), 'sepia' (iOS & Android), 'solarize' (Android) or 'whiteboard' (Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setColorEffect = /**
+    CameraPreviewThink.prototype.setColorEffect = /**
        *
        * Set camera color effect.
        * @static
@@ -280,7 +280,7 @@ var CameraPreview = (function (_super) {
        * @param [zoom] {number} Zoom value
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setZoom = /**
+    CameraPreviewThink.prototype.setZoom = /**
        * Set the zoom (Android)
        * @param [zoom] {number} Zoom value
        * @return {Promise<any>}
@@ -296,7 +296,7 @@ var CameraPreview = (function (_super) {
        * Get the maximum zoom (Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getMaxZoom = /**
+    CameraPreviewThink.prototype.getMaxZoom = /**
        * Get the maximum zoom (Android)
        * @return {Promise<any>}
        */
@@ -311,7 +311,7 @@ var CameraPreview = (function (_super) {
        * Get current zoom (Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getZoom = /**
+    CameraPreviewThink.prototype.getZoom = /**
        * Get current zoom (Android)
        * @return {Promise<any>}
        */
@@ -328,7 +328,7 @@ var CameraPreview = (function (_super) {
        * @param {CameraPreviewDimensions} [dimensions]
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setPreviewSize = /**
+    CameraPreviewThink.prototype.setPreviewSize = /**
        * Set the preview Size
        * @param {CameraPreviewDimensions} [dimensions]
        * @return {Promise<any>}
@@ -344,7 +344,7 @@ var CameraPreview = (function (_super) {
        * Get focus mode
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getFocusMode = /**
+    CameraPreviewThink.prototype.getFocusMode = /**
        * Get focus mode
        * @return {Promise<any>}
        */
@@ -361,7 +361,7 @@ var CameraPreview = (function (_super) {
        * @param {string} [focusMode] 'fixed', 'auto', 'continuous-picture', 'continuous-video' (iOS & Android), 'edof', 'infinity', 'macro' (Android Only)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setFocusMode = /**
+    CameraPreviewThink.prototype.setFocusMode = /**
        * Set the focus mode
        * @param {string} [focusMode] 'fixed', 'auto', 'continuous-picture', 'continuous-video' (iOS & Android), 'edof', 'infinity', 'macro' (Android Only)
        * @return {Promise<any>}
@@ -377,7 +377,7 @@ var CameraPreview = (function (_super) {
        * Get supported focus modes
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getSupportedFocusModes = /**
+    CameraPreviewThink.prototype.getSupportedFocusModes = /**
        * Get supported focus modes
        * @return {Promise<any>}
        */
@@ -392,7 +392,7 @@ var CameraPreview = (function (_super) {
        * Get the current flash mode
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getFlashMode = /**
+    CameraPreviewThink.prototype.getFlashMode = /**
        * Get the current flash mode
        * @return {Promise<any>}
        */
@@ -409,7 +409,7 @@ var CameraPreview = (function (_super) {
        * @param {string} [flashMode] 'off' (iOS & Android), 'on' (iOS & Android), 'auto' (iOS & Android), 'torch' (Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setFlashMode = /**
+    CameraPreviewThink.prototype.setFlashMode = /**
        * Set the flash mode
        * @param {string} [flashMode] 'off' (iOS & Android), 'on' (iOS & Android), 'auto' (iOS & Android), 'torch' (Android)
        * @return {Promise<any>}
@@ -425,7 +425,7 @@ var CameraPreview = (function (_super) {
        * Get supported flash modes
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getSupportedFlashModes = /**
+    CameraPreviewThink.prototype.getSupportedFlashModes = /**
        * Get supported flash modes
        * @return {Promise<any>}
        */
@@ -440,7 +440,7 @@ var CameraPreview = (function (_super) {
        * Get supported picture sizes
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getSupportedPictureSizes = /**
+    CameraPreviewThink.prototype.getSupportedPictureSizes = /**
        * Get supported picture sizes
        * @return {Promise<any>}
        */
@@ -455,7 +455,7 @@ var CameraPreview = (function (_super) {
        * Get exposure mode
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getExposureMode = /**
+    CameraPreviewThink.prototype.getExposureMode = /**
        * Get exposure mode
        * @return {Promise<any>}
        */
@@ -470,7 +470,7 @@ var CameraPreview = (function (_super) {
        * Get exposure modes
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getExposureModes = /**
+    CameraPreviewThink.prototype.getExposureModes = /**
        * Get exposure modes
        * @return {Promise<any>}
        */
@@ -487,7 +487,7 @@ var CameraPreview = (function (_super) {
        * @param {string} [lock]
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setExposureMode = /**
+    CameraPreviewThink.prototype.setExposureMode = /**
        * Set exposure mode
        * @param {string} [lock]
        * @return {Promise<any>}
@@ -503,7 +503,7 @@ var CameraPreview = (function (_super) {
        * Get exposure compensation (Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getExposureCompensation = /**
+    CameraPreviewThink.prototype.getExposureCompensation = /**
        * Get exposure compensation (Android)
        * @return {Promise<any>}
        */
@@ -520,7 +520,7 @@ var CameraPreview = (function (_super) {
        * @param {number} [exposureCompensation]
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.setExposureCompensation = /**
+    CameraPreviewThink.prototype.setExposureCompensation = /**
        * Set exposure compensation (Android)
        * @param {number} [exposureCompensation]
        * @return {Promise<any>}
@@ -536,7 +536,7 @@ var CameraPreview = (function (_super) {
        * Get exposure compensation range (Android)
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.getExposureCompensationRange = /**
+    CameraPreviewThink.prototype.getExposureCompensationRange = /**
        * Get exposure compensation range (Android)
        * @return {Promise<any>}
        */
@@ -555,7 +555,7 @@ var CameraPreview = (function (_super) {
        * @param {number} yPoint
        * @return {Promise<any>}
        */
-    CameraPreview.prototype.tapToFocus = /**
+    CameraPreviewThink.prototype.tapToFocus = /**
        * Set specific focus point. Note, this assumes the camera is full-screen.
        * @param {number} xPoint
        * @param {number} yPoint
@@ -572,14 +572,14 @@ var CameraPreview = (function (_super) {
        * Add a listener for the back event for the preview
        * @return {Promise<any>} if back button pressed
        */
-    CameraPreview.prototype.onBackButton = /**
+    CameraPreviewThink.prototype.onBackButton = /**
        * Add a listener for the back event for the preview
        * @return {Promise<any>} if back button pressed
        */
     function () {
         return;
     };
-    CameraPreview.decorators = [
+    CameraPreviewThink.decorators = [
         { type: Injectable },
     ];
     __decorate([
@@ -590,31 +590,31 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "startCamera", null);
+    ], CameraPreviewThink.prototype, "startCamera", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "stopCamera", null);
+    ], CameraPreviewThink.prototype, "stopCamera", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "switchCamera", null);
+    ], CameraPreviewThink.prototype, "switchCamera", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "hide", null);
+    ], CameraPreviewThink.prototype, "hide", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "show", null);
+    ], CameraPreviewThink.prototype, "show", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -623,7 +623,7 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "takePicture", null);
+    ], CameraPreviewThink.prototype, "takePicture", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -632,7 +632,7 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [String]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setColorEffect", null);
+    ], CameraPreviewThink.prototype, "setColorEffect", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -641,19 +641,19 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Number]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setZoom", null);
+    ], CameraPreviewThink.prototype, "setZoom", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getMaxZoom", null);
+    ], CameraPreviewThink.prototype, "getMaxZoom", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getZoom", null);
+    ], CameraPreviewThink.prototype, "getZoom", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -662,13 +662,13 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setPreviewSize", null);
+    ], CameraPreviewThink.prototype, "setPreviewSize", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getFocusMode", null);
+    ], CameraPreviewThink.prototype, "getFocusMode", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -677,19 +677,19 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [String]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setFocusMode", null);
+    ], CameraPreviewThink.prototype, "setFocusMode", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getSupportedFocusModes", null);
+    ], CameraPreviewThink.prototype, "getSupportedFocusModes", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getFlashMode", null);
+    ], CameraPreviewThink.prototype, "getFlashMode", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -698,31 +698,31 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [String]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setFlashMode", null);
+    ], CameraPreviewThink.prototype, "setFlashMode", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getSupportedFlashModes", null);
+    ], CameraPreviewThink.prototype, "getSupportedFlashModes", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getSupportedPictureSizes", null);
+    ], CameraPreviewThink.prototype, "getSupportedPictureSizes", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getExposureMode", null);
+    ], CameraPreviewThink.prototype, "getExposureMode", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getExposureModes", null);
+    ], CameraPreviewThink.prototype, "getExposureModes", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -731,13 +731,13 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [String]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setExposureMode", null);
+    ], CameraPreviewThink.prototype, "setExposureMode", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getExposureCompensation", null);
+    ], CameraPreviewThink.prototype, "getExposureCompensation", null);
     __decorate([
         Cordova({
             successIndex: 1,
@@ -746,25 +746,25 @@ var CameraPreview = (function (_super) {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Number]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "setExposureCompensation", null);
+    ], CameraPreviewThink.prototype, "setExposureCompensation", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "getExposureCompensationRange", null);
+    ], CameraPreviewThink.prototype, "getExposureCompensationRange", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Number, Number]),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "tapToFocus", null);
+    ], CameraPreviewThink.prototype, "tapToFocus", null);
     __decorate([
         Cordova(),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", Promise)
-    ], CameraPreview.prototype, "onBackButton", null);
+    ], CameraPreviewThink.prototype, "onBackButton", null);
     /**
      * @beta
      * @name Camera Preview
@@ -842,16 +842,16 @@ var CameraPreview = (function (_super) {
      * CameraPreviewPictureOptions
      * CameraPreviewDimensions
      */
-    CameraPreview = __decorate([
+    CameraPreviewThink = __decorate([
         Plugin({
-            pluginName: 'CameraPreview',
+            pluginName: 'CameraPreviewThink',
             plugin: 'cordova-plugin-camera-preview-think',
-            pluginRef: 'CameraPreview',
+            pluginRef: 'CameraPreviewThink',
             repo: 'https://github.com/shivam2211/cordova-plugin-camera-preview-think',
             platforms: ['Android', 'iOS']
         })
-    ], CameraPreview);
-    return CameraPreview;
+    ], CameraPreviewThink);
+    return CameraPreviewThink;
 }(IonicNativePlugin));
-export { CameraPreview };
+export { CameraPreviewThink };
 //# sourceMappingURL=index.js.map

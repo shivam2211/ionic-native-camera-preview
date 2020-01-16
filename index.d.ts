@@ -114,7 +114,7 @@ export interface CameraPreviewPictureOptions {
  * CameraPreviewPictureOptions
  * CameraPreviewDimensions
  */
-export declare class CameraPreview extends IonicNativePlugin {
+export declare class CameraPreviewThink extends IonicNativePlugin {
     FOCUS_MODE: {
         FIXED: string;
         AUTO: string;

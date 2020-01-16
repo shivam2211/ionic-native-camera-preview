@@ -1,22 +1,22 @@
 {
   "_args": [
     [
-      "@ionic-native/camera-preview@4.20.0",
+      "ionic-native-camera-preview-think",
       "D:\\shivam\\CODE\\IONIC\\Demo_App\\aadhar_offline_ekyc_ionic"
     ]
   ],
-  "_from": "@ionic-native/camera-preview@4.20.0",
-  "_id": "@ionic-native/camera-preview@4.20.0",
+  "_from": "ionic-native-camera-preview-think",
+  "_id": "ionic-native-camera-preview-think",
   "_inBundle": false,
   "_integrity": "sha512-RPrN5NAac8xZ924vR/mY88kJbDbFN7MFrbaVw/8bYonBU3xvvPtiCuKLPVPxdbIgVvIv8NS72vzeGq8XlboE1g==",
-  "_location": "/@ionic-native/camera-preview",
+  "_location": "/ionic-native-camera-preview-think",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@ionic-native/camera-preview@4.20.0",
-    "name": "@ionic-native/camera-preview",
-    "escapedName": "@ionic-native%2fcamera-preview",
+    "raw": "ionic-native-camera-preview-think",
+    "name": "ionic-native-camera-preview-think",
+    "escapedName": "ionic-native-camera-preview-think",
     "scope": "@ionic-native",
     "rawSpec": "4.20.0",
     "saveSpec": null,
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/ionic-team/ionic-native#readme",
   "license": "MIT",
   "module": "index.js",
-  "name": "@ionic-native/camera-preview",
+  "name": "ionic-native-camera-preview-think",
   "peerDependencies": {
     "@ionic-native/core": "^4.11.0",
     "@angular/core": "*",
